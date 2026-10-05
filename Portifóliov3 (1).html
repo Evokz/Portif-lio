@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carlos Pinho | Júnior em Cybersecurity & Compliance</title>
+<style>
+:root{--bg:#050816;--card:#0c1430;--bd:#1b2a52;--tx:#e8efff;--mu:#93a4c7;--ac:#22d3ee;--ac2:#a78bfa;--ac3:#f472b6;--ok:#34d399;--wa:#fbbf24;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef3fb;--card:#fff;--bd:#cfd9ec;--tx:#0b1220;--mu:#4f5f7d;--ac:#0891b2;--ac2:#7c3aed;--ac3:#db2777;--ok:#059669;--wa:#d97706}}
+:root[data-theme="light"]{--bg:#eef3fb;--card:#fff;--bd:#cfd9ec;--tx:#0b1220;--mu:#4f5f7d;--ac:#0891b2;--ac2:#7c3aed;--ac3:#db2777;--ok:#059669;--wa:#d97706}
+:root[data-theme="dark"]{--bg:#050816;--card:#0c1430;--bd:#1b2a52;--tx:#e8efff;--mu:#93a4c7;--ac:#22d3ee;--ac2:#a78bfa;--ac3:#f472b6;--ok:#34d399;--wa:#fbbf24}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+body.lock{overflow:hidden}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:48px 48px;opacity:.3;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 75%);pointer-events:none;z-index:0}
+.orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.3;z-index:0;pointer-events:none;animation:fl 16s ease-in-out infinite alternate}
+.o1{width:420px;height:420px;background:var(--ac);top:-120px;left:-100px}.o2{width:480px;height:480px;background:var(--ac2);bottom:-160px;right:-120px;animation-delay:-6s}.o3{width:300px;height:300px;background:var(--ac3);top:45%;left:55%;animation-delay:-10s;opacity:.18}
+@keyframes fl{to{transform:translate(70px,50px) scale(1.2)}}
+#bg{position:fixed;inset:0;z-index:0;opacity:.28;pointer-events:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+main,nav{position:relative;z-index:1}
+nav{position:sticky;top:env(safe-area-inset-top,0px);display:flex;gap:4px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);z-index:5}
+nav a,nav button{color:var(--mu);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:8px;border:0;background:none;cursor:pointer;font-family:inherit}
+nav a:hover,nav button:hover{color:var(--ac);background:var(--card)}
+.logo{color:var(--tx);font-weight:800;margin-right:10px}.logo span{color:var(--ac)}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}.mu{color:var(--mu)}.sm{font-size:13px}
+section{max-width:1040px;margin:auto;padding:76px 20px}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center}
+.tag{color:var(--ok);font-size:14px}
+h1{font-size:clamp(38px,7.5vw,74px);line-height:1.03;margin:10px 0}
+.gt{background:linear-gradient(90deg,var(--ac),var(--ac2),var(--ac3),var(--ac));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gs 6s linear infinite}
+@keyframes gs{to{background-position:250% 0}}
+.type{font-size:clamp(16px,2.6vw,22px);color:var(--mu);min-height:34px}.type b{color:var(--ok);font-weight:400}
+.cur{display:inline-block;width:9px;height:1.1em;background:var(--ac);vertical-align:-3px;animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+.cta,.bt{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;align-items:center}
+.btn{padding:11px 20px;border-radius:10px;border:1px solid var(--ac);color:var(--ac);text-decoration:none;font-weight:600;cursor:pointer;background:none;font-family:inherit;font-size:15px;transition:.2s}
+.btn.p{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#041018;border:0}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px color-mix(in srgb,var(--ac) 30%,transparent)}.btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+h2{font-size:32px;margin:0 0 6px}h2::before{content:"// ";color:var(--ac3);font-family:ui-monospace,monospace}.sub{color:var(--mu);margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--card);border:1px solid var(--bd);border-top:3px solid var(--c);border-radius:14px;padding:18px}.stat b{font-size:34px;color:var(--c);display:block;line-height:1.2}.stat span{color:var(--mu);font-size:13px}
+.g2{display:grid;grid-template-columns:1.2fr 1fr;gap:18px}.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+@media(max-width:760px){.g2{grid-template-columns:1fr}}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.skc{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--c);border-radius:14px;padding:20px;transition:.25s}.skc:hover{transform:translateY(-4px);box-shadow:0 10px 30px color-mix(in srgb,var(--c) 25%,transparent)}
+.skc h3{margin:0 0 12px;font-size:18px}.skc h3 span{font-size:22px;margin-right:8px}
+.tg{display:flex;flex-wrap:wrap;gap:6px}.tg i{font-style:normal;font-size:12.5px;padding:4px 10px;border-radius:6px;background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 35%,transparent)}
+.lg{margin-top:26px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}.lr{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;margin:10px 0}.lr b small{display:block;color:var(--mu);font-weight:400}
+@media(max-width:600px){.lr{grid-template-columns:1fr}}
+.cf{display:flex;gap:4px}.cf span{flex:1;text-align:center;padding:6px 0;background:var(--bg);border:1px solid var(--bd);border-radius:6px;font-size:12px;color:var(--mu);transition:.5s var(--d)}
+.rv.in .cf .on{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#041018;font-weight:700;border-color:transparent}
+.pj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:linear-gradient(160deg,color-mix(in srgb,var(--c) 14%,var(--card)),var(--card) 60%);border:1px solid color-mix(in srgb,var(--c) 40%,var(--bd));border-radius:18px;padding:24px;cursor:pointer;transition:.25s;text-align:left;color:var(--tx);font:inherit;display:block;width:100%;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 40px color-mix(in srgb,var(--c) 35%,transparent);border-color:var(--c)}
+.card .ico{font-size:34px}.card small{display:block;color:var(--c);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px}.card h3{margin:4px 0 8px;font-size:19px}.card p{margin:0 0 14px;color:var(--mu);font-size:14px}.card .go{color:var(--c);font-weight:700;font-size:14px;margin-top:14px;display:block}
+.tl{border-left:2px solid var(--bd);margin:24px 0 0 8px}.it{position:relative;padding:0 0 26px 28px}.it::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 25%,transparent)}
+.it small{color:var(--c);font-size:13px}.it h3{margin:0;font-size:18px}.it p{color:var(--mu);margin:6px 0 0;font-size:14px}
+.tot{display:flex;gap:6px;height:44px}.tot div{flex:var(--f);background:linear-gradient(90deg,var(--c),color-mix(in srgb,var(--c) 55%,var(--bg)));border-radius:8px;color:#041018;font-weight:700;font-size:13px;display:flex;align-items:center;padding:0 12px;transform:scaleX(0);transform-origin:left;transition:transform 1s .2s}.rv.in .tot div{transform:none}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.in{opacity:1;transform:none}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:24px}
+.cc{display:block;text-decoration:none;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-top:3px solid var(--c);border-radius:14px;padding:18px;transition:.25s}.cc:hover{transform:translateY(-4px);box-shadow:0 10px 28px color-mix(in srgb,var(--c) 30%,transparent)}.cc b{display:block;color:var(--c);font-size:13px;margin-bottom:4px}.cc span{font-size:14px;word-break:break-all}
+.term{background:#02060d;border:1px solid var(--bd);border-radius:12px;padding:18px;color:#7ee787;font-size:14px;min-height:150px}.term input{background:none;border:0;outline:0;color:#e6edf7;font:inherit;width:70%}.term div{color:#9fb3d1;white-space:pre-wrap}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:30px 20px 50px;position:relative;z-index:1}
+/* página de projeto */
+.pg{display:block;position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto}.pg[hidden]{display:none}
+.pt{position:sticky;top:0;z-index:2;display:flex;gap:10px;align-items:center;padding:12px 20px;padding-top:calc(12px + env(safe-area-inset-top,0px));background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}.pt .pn{margin-left:auto;display:flex;gap:8px}
+.pw{max-width:1040px;margin:auto;padding:36px 20px 80px}.pw .tg3{color:var(--c);font-size:13px;letter-spacing:.1em;text-transform:uppercase}.ph{font-size:clamp(28px,5vw,46px);margin:6px 0 12px}
+.ib{background:var(--card);border:1px solid var(--bd);border-top:3px solid var(--c);border-radius:12px;padding:16px}.ib h4{margin:0 0 6px;color:var(--c);font-size:13px;letter-spacing:.08em;text-transform:uppercase}.ib p,.ib li{color:var(--mu);font-size:14px;margin:0}.ib ol{padding-left:18px;margin:0}
+.win{margin-top:26px;border:1px solid color-mix(in srgb,var(--c) 50%,var(--bd));border-radius:16px;overflow:hidden;background:var(--bg);box-shadow:0 20px 60px color-mix(in srgb,var(--c) 22%,transparent)}
+.wb{display:flex;gap:7px;align-items:center;padding:10px 14px;background:var(--card);border-bottom:1px solid var(--bd)}.wb i{width:11px;height:11px;border-radius:50%;background:#fb7185}.wb i:nth-child(2){background:#fbbf24}.wb i:nth-child(3){background:#34d399}.wb span{margin-left:10px;color:var(--mu);font-size:12px}
+.wc{padding:20px;min-height:420px}
+.res{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--card);border:1px solid var(--bd);font-size:14px}
+.in{width:100%;padding:11px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;margin-bottom:14px}.in:focus{outline:2px solid var(--ac)}
+.seg{display:inline-flex;border:1px solid var(--bd);border-radius:10px;overflow:hidden;margin-bottom:16px}.seg button{padding:8px 16px;border:0;background:var(--card);color:var(--mu);cursor:pointer;font:inherit;font-size:14px}.seg button.on{background:var(--c);color:#041018;font-weight:700}
+/* logs */
+.tac{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;margin-bottom:16px}.tac span{font-size:11px;text-align:center;padding:8px 2px;background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--mu);transition:.3s}.tac span.on{background:var(--c);color:#041018;font-weight:700;box-shadow:0 0 18px var(--c)}
+@media(max-width:600px){.tac{grid-template-columns:repeat(4,1fr)}}
+.feed{display:flex;flex-direction:column;gap:6px;min-height:290px}.ln{display:flex;gap:10px;align-items:center;text-align:left;width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:12.5px ui-monospace,Menlo,monospace;cursor:pointer;animation:pop .35s both}.ln:hover,.ln.on{border-color:var(--c)}.ln.on{background:color-mix(in srgb,var(--c) 14%,var(--card))}.ln i{width:8px;height:8px;border-radius:50%;flex:none}.ln span{flex:1}.ln b{font-size:11px;font-weight:600}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+.det{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px}.det h3{margin:4px 0 10px}.det .id{font-size:13px}
+/* nav */
+.tc{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font:inherit;font-size:14px;text-align:left}.tc span{font-size:22px}.tc:hover{border-color:var(--c)}.tc.on{border-color:var(--c);background:color-mix(in srgb,var(--c) 15%,var(--card))}
+.mh{margin:22px 0 12px}.fb{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--c);border-radius:10px;padding:14px;animation:pop .4s both}.fb small{color:var(--c);display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase}.fb b{font-size:17px}
+/* sql */
+.kp>div{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px}.kp small{color:var(--mu);display:block;font-size:12px}.kp b{font-size:26px;color:var(--k)}
+.bars{display:flex;gap:8px;height:190px;align-items:flex-end;padding-top:10px}.bw{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;cursor:pointer}.pr{display:flex;gap:3px;align-items:flex-end;width:100%;height:calc(100% - 20px)}.pr div{flex:1;border-radius:5px 5px 0 0;transform-origin:bottom;animation:gr .6s both}.pr .a{background:linear-gradient(var(--ac2),color-mix(in srgb,var(--ac2) 40%,var(--bg)))}.pr .b{background:linear-gradient(var(--ac3),color-mix(in srgb,var(--ac3) 40%,var(--bg)))}.bw:hover .pr div{filter:brightness(1.3)}
+@keyframes gr{from{transform:scaleY(0)}}.bw small{color:var(--mu);font-size:11px;margin-top:4px}
+.dn{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.dn svg{width:130px;flex:none}.dn circle{transition:.8s;fill:none;stroke-width:18}.lgd div{font-size:13px;margin:3px 0}.lgd i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px}
+pre.sq{margin:14px 0 0;background:#02060d;color:#c9d6f2;border:1px solid var(--bd);border-radius:10px;padding:14px;font-size:12.5px;overflow:auto}pre.sq em{color:#c084fc;font-style:normal}pre.sq u{color:#7ee787;text-decoration:none}
+/* voz */
+.vc,.vs{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}.vw{font-size:clamp(32px,6vw,52px);font-weight:800;color:var(--c)}.vp{font-size:18px}
+.wave{display:flex;gap:3px;align-items:center;height:70px;margin:18px 0}.wave i{flex:1;height:8%;background:linear-gradient(var(--ac),var(--c));border-radius:3px;transition:height .09s}
+.ring{width:140px;display:block;margin:auto}.rb{fill:none;stroke:var(--bd);stroke-width:10}.rf{fill:none;stroke:var(--ok);stroke-width:10;stroke-linecap:round;stroke-dasharray:314.16;stroke-dashoffset:314.16;transform:rotate(-90deg);transform-origin:60px 60px;transition:stroke-dashoffset 1s}.ring text{fill:var(--tx);font-size:26px;font-weight:800}
+.dots{display:flex;gap:8px;justify-content:center;margin:14px 0}.dt{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;border:2px solid var(--bd);color:var(--mu)}.dt.cur{border-color:var(--c);color:var(--tx)}.dt.done{background:var(--ok);border-color:var(--ok);color:#041018;font-weight:700}
+/* script */
+.sh{background:var(--card);border:1px solid var(--bd);border-radius:10px;overflow:hidden}.tb{width:100%;border-collapse:collapse;font-size:13.5px}.tb th{background:#188038;color:#fff;padding:7px 10px;text-align:left;font-weight:600}.tb td{padding:8px 10px;border-bottom:1px solid var(--bd);transition:.3s}.rn{background:var(--bg);color:var(--mu);width:34px;text-align:center}
+.tb tr.sc td{background:color-mix(in srgb,var(--ac) 20%,transparent)}.tb tr.bad td{background:color-mix(in srgb,#fb7185 22%,transparent)}.tb td:nth-child(3){color:var(--wa)}
+.log{background:#02060d;color:#7ee787;border:1px solid var(--bd);border-radius:10px;padding:12px;font-size:12.5px;height:210px;overflow:auto;margin:0;white-space:pre-wrap}.ml{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--card);border-left:4px solid #fb7185;font-size:13px;animation:pop .4s both}
+/* csat */
+.chart{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px;margin-top:14px;touch-action:pan-y}.chart svg{width:100%;display:block}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<nav><b class="logo mono">CP<span>//</span></b><a href="#sobre">Início</a><a href="#skills">Skills</a><a href="#projetos">Projetos</a><a href="#exp">Experiência</a><a href="#contato">Contato</a><button id="th" title="Alternar tema">◐</button></nav>
+<main>
+<section class="hero" id="sobre">
+<div class="tag mono">&gt; whoami</div>
+<h1>Carlos Leandro<br><span class="gt">Gomes Pinho</span></h1>
+<div class="type mono"><b>$</b> <span id="ty"></span><span class="cur"></span></div>
+<p class="sub" style="max-width:640px;margin-top:18px">Júnior em cybersecurity e compliance, com 2 anos e meio de experiência entre consultoria de privacidade e operação de dados. Transformo frameworks (ISO 27001, NIST, CIS, LGPD) em controles, consultas SQL e painéis que o negócio usa.</p>
+<div class="cta"><a class="btn p" href="#projetos">Ver projetos</a><a class="btn" href="#contato">Falar comigo</a></div>
+<div class="stats">
+<div class="stat" style="--c:var(--ac)"><b data-n="2.5" data-d="1">0</b><span>anos de experiência</span></div>
+<div class="stat" style="--c:var(--ac2)"><b data-n="4">0</b><span>frameworks no dia a dia</span></div>
+<div class="stat" style="--c:var(--ac3)"><b data-n="6">0</b><span>projetos com demo</span></div>
+<div class="stat" style="--c:var(--ok)"><b>GTI</b><span>formado em 2025</span></div>
+</div>
+</section>
+
+<section id="skills" class="rv"><h2>Skills</h2><p class="sub">Tudo o que uso no trabalho, organizado por área.</p><div class="sk" id="sk"></div>
+<div class="lg"><h3 style="margin:0">🌎 Idiomas</h3><div id="lg"></div></div></section>
+
+<section id="projetos" class="rv"><h2>Projetos</h2><p class="sub">Cada projeto abre em uma página própria com uma versão demo para você testar.</p><div class="pj" id="pj"></div></section>
+
+<section id="exp" class="rv"><h2>Experiência</h2><p class="sub">2 anos e meio, divididos em duas empresas.</p>
+<div class="tot"><div style="--f:3;--c:var(--ac)">Modulo Security · 1,5 ano</div><div style="--f:2;--c:var(--ac2)">Exact Sales · 1 ano</div></div>
+<div class="tl">
+<div class="it" style="--c:var(--ac)"><small class="mono">Modulo Security · 1 ano e 6 meses</small><h3>Cybersecurity, Privacidade e Compliance (Júnior)</h3><p>Consultoria LGPD e privacidade, ISO 27001, NIST e CIS Controls. IDS/IPS, SIEM, relatórios SQL para LGPDManager e Risk Manager, análise de logs com MITRE ATT&amp;CK e operação de dados.</p></div>
+<div class="it" style="--c:var(--ac2)"><small class="mono">Exact Sales / RD Station · 1 ano</small><h3>Dados e Customer Success Operations (Júnior)</h3><p>Dashboards em Google Sheets e Looker Studio, automações com Google Apps Script, acompanhamento de CSAT, consolidação de relatórios com Python e SQL.</p></div>
+<div class="it" style="--c:var(--ok)"><small class="mono">Formação · 2025</small><h3>Gestão da Tecnologia da Informação</h3><p>Graduação concluída em 2025.</p></div>
+</div></section>
+
+<section id="contato" class="rv"><h2>Contato</h2><p class="sub">Vamos conversar? Escolha o canal.</p>
+<div class="cg"><a class="cc" style="--c:var(--ac)" href="mailto:pgcleandro2004@gmail.com"><b class="mono">E-MAIL</b><span>pgcleandro2004@gmail.com</span></a><a class="cc" style="--c:var(--ac2)" href="tel:+5548991931258"><b class="mono">TELEFONE</b><span>(48) 9 9193-1258</span></a><a class="cc" style="--c:var(--ok)" href="https://wa.me/5548991931258" target="_blank" rel="noopener"><b class="mono">WHATSAPP</b><span>Chamar no WhatsApp</span></a><a class="cc" style="--c:var(--ac3)" href="https://www.linkedin.com/in/carlos-leandro-72a436252/" target="_blank" rel="noopener"><b class="mono">LINKEDIN</b><span>carlos-leandro-72a436252</span></a></div>
+<p class="sub">Ou use o terminal: digite <b class="mono">help</b>.</p>
+<div class="term mono"><div id="out">Terminal pronto. Comandos: help, contato, skills, idiomas, tempo, clear</div><div>$ <input id="in" autocomplete="off" spellcheck="false" aria-label="comando"></div></div></section>
+</main>
+<footer>Carlos Leandro Gomes Pinho · Florianópolis, SC · Júnior em Cybersecurity &amp; Compliance</footer>
+<div class="pg" id="pg" hidden></div>
+
+<script>
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)];
+let stops=[];const T=(f,ms)=>{const i=setInterval(f,ms);stops.push(()=>clearInterval(i))},TO=(f,ms)=>{const i=setTimeout(f,ms);stops.push(()=>clearTimeout(i))};
+const cnt=(el,v,d=0,suf="")=>{const t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/900);el.textContent=(v*k).toFixed(d).replace(".",",")+suf;if(k<1)requestAnimationFrame(f)})(t0)};
+/* home */
+const ph=["Júnior em Cybersecurity & Compliance","LGPD | ISO 27001 | NIST | CIS","SIEM, SQL e automação de dados"];let pi=0,ci=0,del=false;
+(function tk(){const w=ph[pi];$("#ty").textContent=w.slice(0,ci);if(!del&&ci<w.length)ci++;else if(!del){del=true;return setTimeout(tk,1400)}else if(ci>0)ci--;else{del=false;pi=(pi+1)%ph.length}setTimeout(tk,del?28:60)})();
+$$("[data-n]").forEach(el=>cnt(el,+el.dataset.n,+el.dataset.d||0));
+const SK=[["🛡️","Segurança","#fb7185",["SIEM","IDS/IPS","Análise de logs","MITRE ATT&CK","Gestão de riscos","Resposta a incidentes"]],["📜","Compliance","#22d3ee",["LGPD","ISO 27001","NIST","CIS Controls","RIPD","LIA / TdB","Consentimento","Trilha de auditoria"]],["🗄️","Dados","#a78bfa",["SQL","Python","Dashboards","Looker Studio","Google Sheets","Relatórios de compliance"]],["⚙️","Automação","#34d399",["Google Apps Script","Google Workspace","Ferramentas HTML","Integrações CSAT"]],["🤝","Operação","#fbbf24",["Customer Success Ops","Operação de dados","Consultoria de privacidade","Documentação"]]];
+$("#sk").innerHTML=SK.map(s=>`<div class="skc" style="--c:${s[2]}"><h3><span>${s[0]}</span>${s[1]}</h3><div class="tg">${s[3].map(x=>`<i>${x}</i>`).join("")}</div></div>`).join("");
+const LG=[["Português","Nativo",6],["Inglês","B2 · intermediário-avançado",4],["Espanhol","B1 · intermediário",3]];
+$("#lg").innerHTML=LG.map(l=>`<div class="lr"><b>${l[0]}<small>${l[1]}</small></b><div class="cf">${["A1","A2","B1","B2","C1","C2"].map((x,i)=>`<span class="${i<l[2]?"on":""}" style="--d:${i*100}ms">${x}</span>`).join("")}</div></div>`).join("");
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")}),{threshold:.1});$$(".rv").forEach(x=>io.observe(x));
+$("#th").onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark";col=""};
+const R={help:"Comandos: contato, skills, idiomas, tempo, clear",contato:"pgcleandro2004@gmail.com | (48) 9 9193-1258 | linkedin.com/in/carlos-leandro-72a436252",skills:"SIEM, IDS/IPS, SQL, Python, Apps Script, MITRE ATT&CK, LGPD, ISO 27001",idiomas:"Português nativo | Inglês B2 | Espanhol B1",tempo:"2,5 anos: Modulo Security 1,5 ano + Exact Sales 1 ano"};
+$("#in").onkeydown=e=>{if(e.key!=="Enter")return;const c=e.target.value.trim().toLowerCase();e.target.value="";const o=$("#out");if(c==="clear"){o.textContent="";return}o.textContent+="\n$ "+c+"\n"+(R[c]||"comando não encontrado, use help")};
+/* fundo: chuva de código */
+const cv=$("#bg"),cx=cv.getContext&&cv.getContext("2d");let col="";
+if(cx){let W,H,cs;const rs=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight;cs=Array.from({length:Math.floor(W/18)},()=>Math.random()*H/18)};rs();addEventListener("resize",rs);
+setInterval(()=>{if(document.hidden)return;if(!col)col=getComputedStyle(document.documentElement).getPropertyValue("--ac").trim();cx.globalCompositeOperation="destination-out";cx.fillStyle="rgba(0,0,0,.1)";cx.fillRect(0,0,W,H);cx.globalCompositeOperation="source-over";cx.fillStyle=col;cx.font="14px monospace";cs.forEach((y,i)=>{cx.fillText("01ABCDEF<>{}#$/"[Math.random()*15|0],i*18,y*18);cs[i]=y*18>H&&Math.random()>.975?0:y+1})},60)}
+
+/* projetos */
+const P=[
+{id:"logs",i:"🛡️",c:"#fb7185",s:"SOC · Detecção",t:"Analisador de Logs com MITRE ATT&CK",w:"log-analyzer — console",d:"Lê logs e mapeia cada evento suspeito a uma tática e técnica do MITRE ATT&CK.",ide:"Logs brutos são difíceis de interpretar rápido. A ideia foi traduzir cada evento para a linguagem padrão do ATT&CK, que qualquer time de segurança já conhece.",fin:"Acelerar a triagem de alertas, padronizar relatórios de incidente e mostrar em quais fases de um ataque o ambiente está sendo atingido.",com:["Importa os logs e extrai usuário, origem, comando e volume.","Compara com padrões conhecidos de ataque.","Associa cada padrão a uma tática e técnica do ATT&CK.","Mostra severidade e uma ação recomendada."],tg:["Logs","MITRE ATT&CK","SOC","Python"]},
+{id:"nav",i:"🧭",c:"#22d3ee",s:"Compliance · Frameworks",t:"Compliance Navigator",w:"compliance-navigator",d:"Mostra como um mesmo tema de segurança aparece em ISO 27001, NIST, CIS e LGPD.",ide:"Quem implementa controles perde tempo procurando equivalências entre frameworks. O Navigator coloca tudo lado a lado.",fin:"Apoiar consultoria e auditoria, evitar retrabalho e servir como material de divulgação profissional.",com:["Escolha um tema, por exemplo acesso ou backup.","Veja o item equivalente em cada framework.","Reaproveite a mesma evidência para vários requisitos."],tg:["ISO 27001","NIST","CIS","LGPD"]},
+{id:"sql",i:"📊",c:"#a78bfa",s:"Dados · SQL",t:"Dashboards SQL: LGPDManager e Risk Manager",w:"painel-lgpd — dashboard",d:"Consultas e painéis para incidentes, requisições do titular, RIPD, LIA/TdB, consentimento e auditoria.",ide:"Transformar o banco das plataformas de compliance em indicadores que gestores e DPOs entendem sem abrir uma query.",fin:"Dar visibilidade e prova de conformidade com a LGPD: prazos, volumes e histórico de ações.",com:["Queries SQL consultam as tabelas da plataforma.","Joins consolidam incidentes, requisições e documentos como RIPD e LIA.","Os resultados alimentam painéis com tooltips interativos.","A trilha de auditoria registra quem fez o quê e quando."],tg:["SQL","LGPD","Auditoria","Risk Manager"]},
+{id:"voz",i:"🗣️",c:"#f472b6",s:"Ferramenta interna · Inglês",t:"App de Pronúncia em Inglês",w:"pronuncia.html",d:"Aplicação HTML de treino de pronúncia que chamou a atenção do CTO.",ide:"Criar um treino de pronúncia simples, sem instalar nada, que qualquer colaborador abra no navegador.",fin:"Apoiar o inglês profissional do time com prática diária e feedback imediato.",com:["Mostra uma palavra do vocabulário de segurança.","Reproduz a pronúncia de referência.","O usuário grava e recebe uma pontuação.","Tudo em um único arquivo HTML, sem dependências."],tg:["HTML","JavaScript","Inglês"]},
+{id:"flow",i:"⚙️",c:"#34d399",s:"Automação · Google Workspace",t:"Automações Google Apps Script",w:"notificarCSAT.gs — planilha",d:"Scripts que notificam CSAT baixo e consolidam dados de várias abas.",ide:"Tirar do time o trabalho manual de copiar dados entre planilhas e avisar sobre notas de clientes.",fin:"Ganhar tempo, reduzir erro humano e agir rápido em avaliações baixas.",com:["O script lê a planilha de CSAT.","Consolida as abas em uma base única.","Detecta notas abaixo da meta.","Dispara a notificação para o responsável."],tg:["Apps Script","Google Sheets","CSAT"]},
+{id:"csat",i:"📈",c:"#fbbf24",s:"BI · Customer Success",t:"Dashboards Looker Studio e Sheets",w:"csat-dashboard — Looker Studio",d:"Painéis de CSAT e operação de Customer Success.",ide:"Unir fórmulas de planilha e visualização para acompanhar a satisfação do cliente.",fin:"Dar à gestão uma visão clara de tendência de CSAT, meta e pontos de atenção.",com:["Fórmulas no Sheets calculam o CSAT por período.","As abas consolidadas viram fonte do Looker Studio.","Os gráficos mostram a tendência contra a meta.","O painel atualiza conforme a planilha muda."],tg:["Looker Studio","Google Sheets","KPIs"]}];
+$("#pj").innerHTML=P.map(p=>`<button class="card" style="--c:${p.c}" data-id="${p.id}"><div class="ico">${p.i}</div><small class="mono">${p.s}</small><h3>${p.t}</h3><p>${p.d}</p><div class="tg">${p.tg.map(t=>`<i>${t}</i>`).join("")}</div><span class="go">Abrir projeto →</span></button>`).join("");
+$("#pj").onclick=e=>{const b=e.target.closest(".card");if(b)location.hash="#/p/"+b.dataset.id};
+
+const DM={
+logs(a){const TA=["Acesso Inicial","Execução","Persistência","Escalação","Credenciais","Descoberta","Mov. Lateral","Exfiltração"];
+const L=[["Failed password for admin from 185.22.1.9 (x42)",4,"T1110","Brute Force","Alta","Bloquear a origem e exigir MFA."],["powershell.exe -enc JABzAD0ATgBl…",1,"T1059.001","PowerShell","Alta","Isolar o host e coletar o comando completo."],["Scheduled task 'upd' created by svc_bkp",2,"T1053","Scheduled Task/Job","Média","Validar com o dono da conta de serviço."],["User added to Domain Admins group",3,"T1098","Account Manipulation","Crítica","Reverter a alteração e investigar quem executou."],["Port scan: 1.2k ports from 10.0.4.17",5,"T1046","Network Service Discovery","Média","Confirmar se há teste autorizado."],["SMB login 10.0.4.17 → FILESRV01 (admin$)",6,"T1021.002","SMB/Windows Admin Shares","Alta","Segmentar a rede e revisar credenciais."],["Outbound 2.3GB to 45.77.x.x over 443",7,"T1041","Exfiltration Over C2","Crítica","Cortar a saída e acionar resposta a incidentes."],["Phishing link clicked: login-micros0ft.co",0,"T1566","Phishing","Média","Resetar a senha e avisar o usuário."]];
+const sc={"Crítica":"#fb7185","Alta":"#fb923c","Média":"#fbbf24"};let feed=[0,1,2],n=3,sel=-1,run=true,tot=3;
+a.innerHTML=`<div class="tac">${TA.map(t=>`<span>${t}</span>`).join("")}</div><div class="g2"><div><div class="feed" id="f"></div><div class="bt"><button class="btn" id="pp">⏸ Pausar captura</button><span class="mono mu sm" id="ct"></span></div></div><div class="det" id="d"></div></div>`;
+const rd=()=>{$("#f",a).innerHTML=feed.map(k=>`<button class="ln${k===sel?" on":""}" style="--c:${sc[L[k][4]]}" data-k="${k}"><i style="background:${sc[L[k][4]]}"></i><span>${L[k][0]}</span><b style="color:${sc[L[k][4]]}">${L[k][4]}</b></button>`).join("");
+$$(".tac span",a).forEach((s,i)=>s.classList.toggle("on",sel>=0&&L[sel][1]===i));$("#ct",a).textContent=tot+" eventos analisados";
+const d=$("#d",a);if(sel<0)d.innerHTML='<p class="mu">Clique em um evento para ver o mapeamento no MITRE ATT&amp;CK.</p>';else{const l=L[sel],c=sc[l[4]];d.innerHTML=`<div class="id mono" style="color:${c}">${l[2]}</div><h3>${l[3]}</h3><p class="mu">Tática: <b style="color:var(--tx)">${TA[l[1]]}</b></p><p class="mu">Severidade: <b style="color:${c}">${l[4]}</b></p><div class="res">💡 ${l[5]}</div>`}};
+$("#f",a).onclick=e=>{const b=e.target.closest(".ln");if(b){sel=+b.dataset.k;rd()}};
+$("#pp",a).onclick=e=>{run=!run;e.target.textContent=run?"⏸ Pausar captura":"▶ Retomar captura"};
+T(()=>{if(!run)return;feed.push(n%8);n++;tot++;if(feed.length>6)feed.shift();rd()},1500);rd()},
+
+nav(a){const F=[["ISO 27001","#22d3ee"],["NIST CSF","#a78bfa"],["CIS v8","#fbbf24"],["LGPD","#34d399"]];
+const M=[["Controle de acesso","🔑",["A.5.15 / A.8.2","PR.AA","Controle 6","Art. 46"]],["Resposta a incidentes","🚨",["A.5.24 a A.5.28","RS","Controle 17","Art. 48"]],["Backup e recuperação","💾",["A.8.13","PR.DS-11","Controle 11","Art. 46"]],["Inventário de ativos e dados","🗂️",["A.5.9","ID.AM","Controles 1 e 2","Art. 37"]],["Criptografia","🔐",["A.8.24","PR.DS","Controle 3","Art. 46"]],["Treinamento e conscientização","🎓",["A.6.3","PR.AT","Controle 14","Art. 50"]]];
+let sel=0,q="";a.innerHTML=`<input class="in" id="q" placeholder="Buscar tema (ex.: backup, acesso)…"><div class="g3" id="tm"></div><div id="mp"></div>`;
+const rd=()=>{const v=M.map((m,i)=>[m,i]).filter(([m])=>m[0].toLowerCase().includes(q));
+$("#tm",a).innerHTML=v.map(([m,i])=>`<button class="tc${i===sel?" on":""}" style="--c:var(--ac)" data-i="${i}"><span>${m[1]}</span>${m[0]}</button>`).join("")||'<p class="mu">Nenhum tema encontrado.</p>';
+const m=M[sel];$("#mp",a).innerHTML=`<h3 class="mh">${m[1]} ${m[0]}</h3><div class="g4">${F.map((f,k)=>`<div class="fb" style="--c:${f[1]};animation-delay:${k*70}ms"><small>${f[0]}</small><b>${m[2][k]}</b></div>`).join("")}</div><p class="mu sm" style="margin-top:14px">Mapeamento simplificado, para fins didáticos.</p>`};
+$("#tm",a).onclick=e=>{const b=e.target.closest(".tc");if(b){sel=+b.dataset.i;rd()}};$("#q",a).oninput=e=>{q=e.target.value.toLowerCase().trim();rd()};rd()},
+
+sql(a){let s=7;const rnd=()=>(s=s*16807%2147483647)/2147483647,mn=["Out","Nov","Dez","Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set"],D=mn.map(()=>[2+Math.floor(rnd()*8),10+Math.floor(rnd()*20)]);
+const SLA={3:97,6:95,12:93},TM={3:3.8,6:4.2,12:4.6};let N=6;
+a.innerHTML=`<div class="seg" id="sg" style="--c:var(--ac2)">${[3,6,12].map(x=>`<button data-n="${x}">${x} meses</button>`).join("")}</div><div class="g4 kp" id="kp"></div><div class="g2" style="margin-top:16px"><div><div class="bars" id="br"></div><div class="res" id="tt">Passe o mouse ou toque nas barras · dados fictícios</div></div><div class="dn" id="dn"></div></div><div class="bt"><button class="btn" id="sb">{ } Ver consulta SQL</button></div><pre class="sq mono" id="sq" hidden></pre>`;
+const hl=t=>t.replace(/>/g,"&gt;").replace(/\b(SELECT|FROM|WHERE|GROUP BY|ORDER BY|COUNT|FILTER|AS|DATE_TRUNC|INTERVAL|CURRENT_DATE)\b/g,"<em>$1</em>").replace(/'[^']*'/g,m=>`<u>${m}</u>`);
+const rd=()=>{const d=D.slice(12-N),m=mn.slice(12-N),ti=d.reduce((x,y)=>x+y[0],0),tr=d.reduce((x,y)=>x+y[1],0),mx=Math.max(...d.flat());
+$$("#sg button",a).forEach(b=>b.classList.toggle("on",+b.dataset.n===N));
+$("#kp",a).innerHTML=[["Incidentes","var(--ac3)"],["Requisições do titular","var(--ac2)"],["Dentro do prazo (SLA)","var(--ok)"],["Tempo médio de resposta","var(--wa)"]].map((k,i)=>`<div style="--k:${k[1]}"><small>${k[0]}</small><b id="k${i}">0</b></div>`).join("");
+cnt($("#k0",a),ti);cnt($("#k1",a),tr);cnt($("#k2",a),SLA[N],0,"%");cnt($("#k3",a),TM[N],1," dias");
+$("#br",a).innerHTML=d.map((x,i)=>`<div class="bw" data-t="${m[i]}: ${x[1]} requisições e ${x[0]} incidentes"><div class="pr"><div class="a" style="height:${x[1]/mx*100}%"></div><div class="b" style="height:${x[0]/mx*100}%"></div></div><small>${m[i]}</small></div>`).join("");
+const sg=[["Concluídas",.62,"var(--ok)"],["Em andamento",.25,"var(--wa)"],["Abertas",.13,"var(--ac3)"]];let off=0;
+$("#dn",a).innerHTML=`<svg viewBox="0 0 100 100" style="transform:rotate(-90deg)">${sg.map(x=>{const l=x[1]*251.3,c=`<circle cx="50" cy="50" r="40" stroke="${x[2]}" stroke-dasharray="${l} ${251.3-l}" stroke-dashoffset="${-off}"/>`;off+=l;return c}).join("")}</svg><div class="lgd">${sg.map(x=>`<div><i style="background:${x[2]}"></i>${x[0]} · ${Math.round(x[1]*100)}%</div>`).join("")}<div class="mu sm" style="margin-top:8px"><i style="background:var(--ac2)"></i>barras roxas: requisições<br><i style="background:var(--ac3)"></i>barras rosas: incidentes</div></div>`;
+$("#sq",a).innerHTML=hl(`SELECT DATE_TRUNC('month', criado_em) AS mes,\n       COUNT(*) FILTER (WHERE tipo = 'incidente')  AS incidentes,\n       COUNT(*) FILTER (WHERE tipo = 'requisicao') AS requisicoes\nFROM   registros_lgpd\nWHERE  criado_em >= CURRENT_DATE - INTERVAL '${N} months'\nGROUP BY 1 ORDER BY 1;`)};
+$("#sg",a).onclick=e=>{const b=e.target.closest("button");if(b){N=+b.dataset.n;rd()}};
+const tip=e=>{const b=e.target.closest(".bw");if(b)$("#tt",a).textContent=b.dataset.t};$("#br",a).onmouseover=tip;$("#br",a).onclick=tip;
+$("#sb",a).onclick=()=>{const p=$("#sq",a);p.hidden=!p.hidden;$("#sb",a).textContent=p.hidden?"{ } Ver consulta SQL":"{ } Ocultar consulta SQL"};rd()},
+
+voz(a){const W=[["Vulnerability","/ˌvʌl.nə.rəˈbɪl.ə.ti/","Vulnerabilidade"],["Authentication","/ɔːˌθen.tɪˈkeɪ.ʃən/","Autenticação"],["Thought","/θɔːt/","Pensamento"],["Through","/θruː/","Através de"],["Schedule","/ˈskedʒ.uːl/","Cronograma"],["Comfortable","/ˈkʌmf.tə.bəl/","Confortável"]];
+let i=0,busy=false;const sc=W.map(()=>0);
+a.innerHTML=`<div class="g2"><div class="vc"><small class="mu" id="no"></small><div class="vw" id="w"></div><div class="mono vp mu" id="p"></div><div id="tr"></div><div class="wave" id="wv">${"<i></i>".repeat(32)}</div><div class="bt"><button class="btn" id="l">🔊 Ouvir</button><button class="btn p" id="r">🎤 Gravar</button></div></div><div class="vs"><svg viewBox="0 0 120 120" class="ring"><circle cx="60" cy="60" r="50" class="rb"/><circle cx="60" cy="60" r="50" class="rf" id="rf"/><text x="60" y="69" text-anchor="middle" id="rt">--</text></svg><div class="dots" id="dt"></div><div class="res" id="msg">Ouça a referência e grave sua pronúncia.</div><p class="mu sm">Avaliação simulada, apenas para demonstração.</p><div class="bt" style="justify-content:center"><button class="btn" id="pv">← Anterior</button><button class="btn" id="nx">Próxima →</button></div></div></div>`;
+const ring=v=>{$("#rf",a).style.strokeDashoffset=314.16*(1-v/100);$("#rt",a).textContent=v?v:"--"};
+const show=()=>{$("#no",a).textContent=`Palavra ${i+1} de ${W.length}`;$("#w",a).textContent=W[i][0];$("#p",a).textContent=W[i][1];$("#tr",a).textContent=W[i][2];ring(sc[i]);$("#dt",a).innerHTML=sc.map((s,k)=>`<span class="dt${k===i?" cur":""}${s?" done":""}">${k+1}</span>`).join("")};
+const bars=$$("#wv i",a);
+$("#l",a).onclick=()=>{if(!("speechSynthesis" in window)){$("#msg",a).textContent="Seu navegador não tem áudio de referência.";return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(W[i][0]);u.lang="en-US";u.rate=.85;speechSynthesis.speak(u)};
+$("#r",a).onclick=()=>{if(busy)return;busy=true;const bt=$("#r",a);bt.disabled=true;bt.textContent="● Gravando…";$("#msg",a).textContent="Fale agora…";const iv=setInterval(()=>bars.forEach(b=>b.style.height=(10+Math.random()*90)+"%"),90);stops.push(()=>clearInterval(iv));
+TO(()=>{clearInterval(iv);bars.forEach(b=>b.style.height="8%");const v=62+Math.floor(Math.random()*37);sc[i]=v;show();$("#msg",a).textContent=v>85?"Excelente! Pronúncia muito clara.":v>72?"Bom! Atenção ao som inicial da palavra.":"Ouça de novo e repita mais devagar.";bt.disabled=false;bt.textContent="🎤 Gravar";busy=false},2000)};
+const go=d=>{if(busy)return;i=(i+d+W.length)%W.length;show();$("#msg",a).textContent="Ouça a referência e grave sua pronúncia."};
+$("#pv",a).onclick=()=>go(-1);$("#nx",a).onclick=()=>go(1);show()},
+
+flow(a){const R=[["Acme Ltda",5,"Ana"],["Beta SA",4,"Bruno"],["Gama ME",2,"Ana"],["Delta Corp",5,"Carla"],["Épsilon",1,"Bruno"],["Zeta Tech",4,"Carla"],["Eta Log",3,"Ana"],["Theta",5,"Bruno"]];let id=0;
+a.innerHTML=`<div class="g2"><div class="sh"><table class="tb"><tr><th></th><th>Cliente</th><th>Nota CSAT</th><th>Responsável</th><th>Status</th></tr>${R.map((r,k)=>`<tr id="r${k}"><td class="rn">${k+2}</td><td>${r[0]}</td><td>${"★".repeat(r[1])}<span class="mu">${"★".repeat(5-r[1])}</span></td><td>${r[2]}</td><td class="st">—</td></tr>`).join("")}</table></div><div><pre class="log mono" id="lg">Pronto para executar…</pre><div id="ml"></div></div></div><div class="bt"><button class="btn p" id="go">▶ Executar notificarCSAT()</button><button class="btn" id="rs">↺ Reiniciar</button></div>`;
+const rst=()=>{id++;$$("tr[id]",a).forEach(t=>{t.className="";$(".st",t).textContent="—"});$("#lg",a).textContent="Pronto para executar…";$("#ml",a).innerHTML="";$("#go",a).disabled=false};
+$("#go",a).onclick=()=>{rst();const me=id,lg=$("#lg",a);$("#go",a).disabled=true;lg.textContent="Iniciando execução…\n";let k=0,c=0;
+const step=()=>{if(me!==id)return;$$("tr.sc",a).forEach(x=>x.classList.remove("sc"));if(k>=R.length){lg.textContent+=`✔ Concluído: ${c} alertas enviados`;lg.scrollTop=lg.scrollHeight;$("#go",a).disabled=false;return}
+const tr=$("#r"+k,a),r=R[k];tr.classList.add("sc");if(r[1]<=2){c++;tr.classList.add("bad");$(".st",tr).textContent="⚠ alerta";lg.textContent+=`⚠ ${r[0]}: nota ${r[1]} → notificar ${r[2]}\n`;$("#ml",a).insertAdjacentHTML("afterbegin",`<div class="ml"><b>✉️ Para: ${r[2]}</b><br>CSAT baixo: ${r[0]} (nota ${r[1]}). Entrar em contato hoje.</div>`)}else{$(".st",tr).textContent="✓ ok";lg.textContent+=`✓ ${r[0]}: nota ${r[1]}\n`}
+lg.scrollTop=lg.scrollHeight;k++;TO(step,520)};step()};
+$("#rs",a).onclick=rst},
+
+csat(a){const mn=["Mar","Abr","Mai","Jun","Jul","Ago","Set","Out"],D={"Todas":[88,90,87,91,93,92,94,95],"Onboarding":[84,86,85,89,90,91,92,93],"Suporte":[91,93,89,92,95,93,96,97]},X=i=>50+i*80,Y=v=>200-(v-80)*8;let k="Todas";
+a.innerHTML=`<div class="seg" id="sg" style="--c:var(--wa)">${Object.keys(D).map(x=>`<button data-k="${x}">${x}</button>`).join("")}</div><div class="g4 kp" id="kp"></div><div class="chart" id="ch"></div><div class="res" id="tt">Passe o mouse (ou toque) sobre o gráfico · dados fictícios</div>`;
+const rd=()=>{const d=D[k],p=d.map((v,i)=>X(i)+","+Y(v)),avg=d.reduce((x,y)=>x+y,0)/d.length,best=Math.max(...d);
+$$("#sg button",a).forEach(b=>b.classList.toggle("on",b.dataset.k===k));
+$("#kp",a).innerHTML=[["CSAT atual",d[7]+"%","var(--wa)"],["Média do período",avg.toFixed(1).replace(".",",")+"%","var(--ac)"],["Melhor mês",best+"% ("+mn[d.indexOf(best)]+")","var(--ok)"],["Versus meta (90%)",(d[7]-90>=0?"+":"")+(d[7]-90)+" p.p.","var(--ac3)"]].map(x=>`<div style="--k:${x[2]}"><small>${x[0]}</small><b>${x[1]}</b></div>`).join("");
+$("#ch",a).innerHTML=`<svg viewBox="0 0 640 240" id="sv"><defs><linearGradient id="gA" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--wa)" stop-opacity=".5"/><stop offset="1" stop-color="var(--wa)" stop-opacity="0"/></linearGradient></defs>${[80,85,90,95,100].map(v=>`<line x1="50" x2="610" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--bd)"/><text x="40" y="${Y(v)+4}" text-anchor="end" fill="var(--mu)" font-size="11">${v}</text>`).join("")}<line x1="50" x2="610" y1="${Y(90)}" y2="${Y(90)}" stroke="var(--ok)" stroke-dasharray="6 4"/><text x="612" y="${Y(90)-4}" text-anchor="end" fill="var(--ok)" font-size="11">meta 90</text><path d="M${X(0)},200 L${p.join(" L")} L${X(7)},200Z" fill="url(#gA)"/><polyline points="${p.join(" ")}" fill="none" stroke="var(--wa)" stroke-width="3" stroke-linejoin="round"/>${d.map((v,i)=>`<circle cx="${X(i)}" cy="${Y(v)}" r="4" fill="var(--wa)"/>`).join("")}${mn.map((m,i)=>`<text x="${X(i)}" y="224" text-anchor="middle" fill="var(--mu)" font-size="11">${m}</text>`).join("")}<line id="cl" y1="30" y2="200" stroke="var(--ac2)" stroke-width="1.5" opacity="0"/><circle id="cd" r="8" fill="var(--ac2)" opacity="0"/></svg>`};
+const mv=e=>{const sv=$("#sv",a);if(!sv)return;const r=sv.getBoundingClientRect(),px=(e.clientX-r.left)/r.width*640,i=Math.max(0,Math.min(7,Math.round((px-50)/80))),v=D[k][i];
+const l=$("#cl",sv),c=$("#cd",sv);l.setAttribute("x1",X(i));l.setAttribute("x2",X(i));l.setAttribute("opacity",1);c.setAttribute("cx",X(i));c.setAttribute("cy",Y(v));c.setAttribute("opacity",1);$("#tt",a).textContent=`${mn[i]} · ${k}: CSAT ${v}% (${v>=90?"acima":"abaixo"} da meta)`};
+$("#ch",a).onpointermove=mv;$("#ch",a).onpointerdown=mv;
+$("#sg",a).onclick=e=>{const b=e.target.closest("button");if(b){k=b.dataset.k;rd()}};rd()}};
+
+/* roteador */
+function route(){stops.forEach(f=>f());stops=[];try{speechSynthesis.cancel()}catch(e){}
+const m=location.hash.match(/^#\/p\/(\w+)/),pg=$("#pg");if(!m){pg.hidden=true;pg.innerHTML="";document.body.classList.remove("lock");return}
+const x=P.findIndex(p=>p.id===m[1]);if(x<0){location.hash="#projetos";return}const p=P[x],pv=P[(x+5)%6].id,nx=P[(x+1)%6].id;
+pg.innerHTML=`<div class="pt"><button class="btn" id="bk">← Voltar</button><span class="mono mu sm">projeto ${x+1}/6</span><div class="pn"><button class="btn" data-go="${pv}">‹</button><button class="btn" data-go="${nx}">›</button></div></div><div class="pw" style="--c:${p.c}"><div class="tg3 mono">${p.s}</div><h1 class="ph">${p.i} ${p.t}</h1><div class="tg" style="--c:${p.c}">${p.tg.map(t=>`<i>${t}</i>`).join("")}</div><div class="g3" style="margin-top:22px"><div class="ib"><h4>Ideia</h4><p>${p.ide}</p></div><div class="ib"><h4>Finalidade</h4><p>${p.fin}</p></div><div class="ib"><h4>Como funciona</h4><ol>${p.com.map(c=>`<li>${c}</li>`).join("")}</ol></div></div><div class="win"><div class="wb"><i></i><i></i><i></i><span class="mono">${p.w}</span></div><div class="wc" id="app"></div></div><p class="mu sm">Versão demonstrativa com dados fictícios.</p></div>`;
+pg.hidden=false;pg.scrollTop=0;document.body.classList.add("lock");
+$("#bk").onclick=()=>{location.hash="#projetos"};$$("[data-go]",pg).forEach(b=>b.onclick=()=>{location.hash="#/p/"+b.dataset.go});
+$("#app").style.setProperty("--c",p.c);DM[p.id]($("#app"))}
+addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
